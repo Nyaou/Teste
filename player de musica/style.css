@@ -1,6 +1,6 @@
 :root {
     --cor01: rgba(0, 0, 0, 0.699) ;
-    --cor02: 248, 252, 252, 0.829;
+    --cor02: rgba(248, 252, 252, 0.829);
     
 }
 
@@ -13,7 +13,7 @@ body{
     flex-direction: column;
     align-items: center;
     align-content: center;
-    background-color: var(cor01);
+    background-color: var(--cor01);
     width: 100vw;
     height: 100vh;
 }
@@ -74,7 +74,7 @@ progress{
 .lista{
     display: flex;
     flex-direction: column;
-    background-color: var(cor02);
+    background-color: var(--cor02);
     color: rgb(7, 7, 7);
     width:300px;
     border: 2px solid rgb(5, 5, 5);
