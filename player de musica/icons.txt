@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ (link para usar os icones no projeto)
+
+<i class="fas fa-play"></i> (icone de começar a musica.)
+
+<i class="fas fa-pause"></i> (icone de pausar a musica.)
+
+<i class="fas fa-forward"></i> (icone de proxima musica.)
+
+<i class="fas fa-backward"></i> (icone de musica anterior.)
+
+<i class="far fa-file-audio"></i> (icone arquivo de audio.)
+
+<i class="fas fa-volume-down"></i> (abaixo o volume.)
+
+<i class="fas fa-volume-off"></i> (mudo.)
+
+<i class="fas fa-volume-mute"></i> (sem som.)
+
+<i class="fas fa-volume-up"></i> (aumentar o volume.)

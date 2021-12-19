@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Player de musica.</title>
+</head>
+<body>
+    <audio src="" id="audio"></audio>
+    <div class="imagem">
+        <img src="imagens/imageminicial.jpg" alt="disco de vinil" id="imagem">
+    </div>
+    <div class="artista" id="artista">
+        <h2 class="nomeArtista"></h2>
+        <p class="nomeMusica"></p>
+    </div>
+    <div class="temporizador" id="temporizador">
+        <p>inicio</p>
+        <p>fim</p>
+    </div>
+    <div class="duracao" id="duracao">
+        <progress value='0' max='1' id="progress"></progress>
+        <div class="ponto"></div>
+    </div>
+    </div>
+    <div class="botoes" id="botoes">
+        <i class="fas fa-backward" id="previous"></i>
+        <i class="fas fa-play" id="play"></i>
+        <i class="fas fa-pause" id="pause"></i>
+        <i class="fas fa-forward" id="next"></i>
+    </div>
+    <div class="lista" id="lista">
+       
+    </div>
+    <script src="player.js"></script>
+</body>
+</html>
