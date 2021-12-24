@@ -1,0 +1,72 @@
+:root{
+    --corfundo: #AD62F0;
+    --tom-claro: #4AA4F0;
+    ---tom-meio-escuro: #5659F0;
+
+    --fontes-usadas: 'Shizuru', cursive;
+}
+@font-face {
+    font-family: 'Shizuru', cursive;
+    src: url(../fontes-de-letras/Shizuru-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(---tom-meio-escuro);
+    color: white;
+    font-family: var(--fontes-usadas);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tom-claro);
+    width: 95%;
+    border: 2px solid white;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 2px 3px 1px 1px rgba(0, 0, 0, 0.479);
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    align-items: center;
+}
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.botoes{
+    color: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    padding: 5px;
+}
+.botoes:hover{
+    display: block;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}

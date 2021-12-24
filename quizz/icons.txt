@@ -1,0 +1,5 @@
+<i class="fas fa-bars"></i> - barrinhas de menu
+<i class="fas fa-angle-left"></i> - seta esquerda
+<i class="fas fa-angle-right"></i> - seta direita
+<i class="fas fa-ellipsis-v"></i> - pontinhos de menu
+
