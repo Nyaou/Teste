@@ -1,7 +1,7 @@
 const Quiz = [
-    {pergunta:'Quanto é 1 + 1 ?',itema:'1',itemb:'2',itemc:'3',itemcorreto:'itemb'},
-    {pergunta:'Quanto é 1 - 1 ?',itema:'0',itemb:'1',itemc:'2',itemcorreto:'itema'},
-    {pergunta:'Quanto é 1/1 ?',itema:'0',itemb:'1',itemc:'2',itemcorreto:'itemb'}
+    {pergunta:'Quanto é 1 + 1 ?',itema:'1',itemb:'2',itemc:'3',gabarito:'itemb'},
+    {pergunta:'Quanto é 1 - 1 ?',itema:'0',itemb:'1',itemc:'2',gabarito:'itema'},
+    {pergunta:'Quanto é 1/1 ?',itema:'-1',itemb:'0',itemc:'1',gabarito:'itemc'}
 ]
 
 var pergunta = document.getElementById('pergunta')
@@ -11,33 +11,36 @@ var itemc = document.getElementById('item-c')
 var next = document.getElementById('next')
 var previous = document.getElementById('previous')
 var confirmar = document.getElementById('confirmar')
-var nome = document.getElementById('nome').value
 var container = document.getElementById('container')
 
 let index = 0
 let pontos = 0
 
-function Gabarito () {
-    let itema = document.querySelector('input[id="input-a"]:checked');
-    let itemb = document.querySelector('input[id="input-b"]:checked');
-    let itemc = document.querySelector('input[id="input-c"]:checked');  
+function Pontuacao() {
+    let itema = document.getElementById('input-a')
+    let itemb = document.getElementById('input-b')
+    let itemc = document.getElementById('input-c')
 
     switch (index) {
         case 0:
-            if(itemb.value === 'on'){
-                pontos++
-            }else if(itema.value === 'on' || itemc.value === 'on'){
+            if(itemb.checked){
+                pontos++               
+            }else{
                 pontos = pontos
             }
             break;
         case 1:
-            if(itema.value === 'on'){
+            if(itema.checked){
                 pontos++
+            }else{
+                pontos = pontos
             }
             break;
         case 2:
-            if(itemb.value === 'on'){
+            if(itemc.checked){
                 pontos++
+            }else{
+                pontos = pontos
             }
             break;
     }
@@ -61,10 +64,15 @@ function RenderizarTela(){
 }
 
 function Validar () {
-    Gabarito()
+    Pontuacao()
+    let nome = document.getElementById('nome').value
     container.innerHTML = `
-    <h2>${pontos}</h2>
-    <div>Você acertu tudo parabens!!</div>
+    <div class="pontuacao">
+        <h2>${nome}</h2>
+        <h3>Sua pontuação foi de ${pontos}</h3>
+        <p>Obrigado por jogar meu jogo se diverta.</p>
+        
+    </div>
     `
 }
 
